@@ -33,3 +33,11 @@ $(document).ready(function() {
 	//Update the scores every minute.
 	interval_ref = setInterval(updateScore, 60*1000);
 });
+
+/**
+ * Clear Interval on window unload.
+ * Just to make sure that it doesn't consume any unnecessary resources!
+ */
+$(window).unload(function() {
+	clearInterval(interval_ref);
+});
