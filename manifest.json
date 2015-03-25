@@ -1,0 +1,14 @@
+{
+  "name": "Shows Live score of cricket matches!",
+  "description": "Fetches the scores from cricinfo and displays it to user.",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Show Live Cricket Score!",
+      "default_icon": "img/icon.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
